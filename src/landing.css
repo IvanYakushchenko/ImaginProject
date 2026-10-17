@@ -294,6 +294,7 @@ app-root.dark-theme .site-shell {
   padding-left: 2px;
 }
 
+.avatar-stack a,
 .avatar-stack span {
   width: 25px;
   height: 25px;
@@ -306,19 +307,33 @@ app-root.dark-theme .site-shell {
   color: #47463f;
   font-size: 8px;
   font-weight: 700;
+  text-decoration: none;
 }
 
-.avatar-stack span:nth-child(2) {
+.avatar-stack a span {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.avatar-stack span:nth-child(2),
+.avatar-stack a:nth-child(2) {
   background: #bdbbb2;
 }
 
-.avatar-stack span:nth-child(3) {
+.avatar-stack span:nth-child(3),
+.avatar-stack a:nth-child(3) {
   background: #e5e3dc;
 }
 
-.avatar-stack span:nth-child(4) {
-  background: var(--ink);
-  color: #fff;
+.avatar-stack span:nth-child(4),
+.avatar-stack a:nth-child(4) {
+  background: #272d34;
+  color: #ffffff;
 }
 
 .hero-proof p {

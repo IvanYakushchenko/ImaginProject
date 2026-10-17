@@ -213,10 +213,13 @@ a {
   font-size: 10px;
 }
 
-.apple-mark {
+.platform-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
   margin-right: 5px;
-  color: #55544e;
-  font-size: 9px;
+  border-radius: 50%;
+  background: #55544e;
 }
 
 .hero-proof {

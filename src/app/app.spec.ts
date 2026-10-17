@@ -19,8 +19,8 @@ describe('App', () => {
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('From idea');
-    expect(compiled.querySelector('.download-link')?.getAttribute('href')).toBe(
-      '/downloads/imagin-macos.dmg',
+    expect(compiled.querySelector('.header-cta')?.getAttribute('href')).toBe(
+      '/downloads/imagin-windows.exe',
     );
   });
 });

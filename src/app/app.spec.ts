@@ -14,10 +14,13 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render the landing page and app download link', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ImaginProject');
+    expect(compiled.querySelector('h1')?.textContent).toContain('From idea');
+    expect(compiled.querySelector('.download-link')?.getAttribute('href')).toBe(
+      '/downloads/imagin-macos.dmg',
+    );
   });
 });
